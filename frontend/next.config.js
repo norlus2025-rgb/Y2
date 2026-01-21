@@ -11,6 +11,14 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config, { isServer }) => {
+    // Ignore tailwindcss if not available
+    config.ignoreWarnings = [
+      ...(config.ignoreWarnings || []),
+      { module: /node_modules\/.*tailwindcss/ },
+    ];
+    return config;
+  },
 };
 
 module.exports = nextConfig;
