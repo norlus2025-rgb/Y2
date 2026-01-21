@@ -1,0 +1,29 @@
+{
+    "name": "TaskFlow Africa",
+    "short_name": "TaskFlow",
+    "description": "Gagne de l'argent en effectuant des tâches simples sur les réseaux sociaux",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fffbf5",
+    "theme_color": "#d67c3e",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "finance",
+        "productivity"
+    ],
+    "lang": "fr"
+}

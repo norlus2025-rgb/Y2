@@ -186,11 +186,12 @@ export default function DashboardPage() {
         </div>
 
         {/* Quick Links */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
           {[
             { href: '/dashboard/withdraw', label: 'Retirer', icon: '💸', color: 'bg-green-100 text-green-700' },
             { href: '/tasks', label: 'Tâches', icon: '📋', color: 'bg-blue-100 text-blue-700' },
             { href: '/referrals', label: 'Parrainer', icon: '👥', color: 'bg-orange-100 text-orange-700' },
+            { href: '/dashboard/history', label: 'Historique', icon: '📜', color: 'bg-purple-100 text-purple-700' },
             { href: '/dashboard/settings', label: 'Paramètres', icon: '⚙️', color: 'bg-gray-100 text-gray-700' },
           ].map((link, idx) => (
             <Link
