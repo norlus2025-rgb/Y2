@@ -1,3 +1,8 @@
 const postcss = require('postcss');
 
-m
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
