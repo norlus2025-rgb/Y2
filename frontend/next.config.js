@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  experimental: {
+    optimizePackageImports: ["lucide-react"],
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -10,14 +13,6 @@ const nextConfig = {
         hostname: '**',
       },
     ],
-  },
-  webpack: (config, { isServer }) => {
-    // Ignore tailwindcss if not available
-    config.ignoreWarnings = [
-      ...(config.ignoreWarnings || []),
-      { module: /node_modules\/.*tailwindcss/ },
-    ];
-    return config;
   },
 };
 
