@@ -1,6 +1,6 @@
 [build]
   base = "frontend"
-  command = "NPM_CONFIG_PRODUCTION=false npm install --include=dev && rm -f postcss.config.js tailwind.config.js && npm run build"
+  command = "npm install typescript @types/react @types/node --save-dev && npm install --include=dev && rm -f postcss.config.js tailwind.config.js && npm run build"
   publish = ".next"
 
 [[redirects]]

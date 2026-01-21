@@ -7,6 +7,9 @@ COPY package*.json ./
 
 RUN npm install
 
+# installer TypeScript et types avant le build (sans modifier package.json)
+RUN npm install typescript @types/react @types/node --no-save
+
 COPY . .
 
 RUN npm run build
