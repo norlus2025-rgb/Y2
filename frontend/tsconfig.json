@@ -8,7 +8,8 @@
     ],
     "jsx": "preserve",
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
+    "baseUrl": ".",
     "allowJs": true,
     "strict": false,
     "esModuleInterop": true,
@@ -23,11 +24,8 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
-    "noEmit": true
+      "@/*": ["./*"]
+    }
   },
   "include": [
     "next-env.d.ts",
