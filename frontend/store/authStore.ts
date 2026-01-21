@@ -10,6 +10,7 @@ export interface User {
   referralEarnings: number;
   referralCode: string;
   profileImage?: string;
+  isAdmin?: boolean;
 }
 
 interface AuthStore {
